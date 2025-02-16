@@ -48,6 +48,7 @@ ol {
   display: flex;
   margin-right: auto;
   padding: 24px 0;
+  align-items: center;
 }
 .header .header-nav-link {
   font-weight: 700;
@@ -84,7 +85,7 @@ ol {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2e2f42;
-  padding: 0 24px;
+  padding: 24px 0;
 }
 .nav-item-link:hover,
 .nav-item-link:focus {
@@ -121,6 +122,9 @@ ol {
   letter-spacing: 0.02em;
   color: #404bbf;
 }
+img {
+  display: block;
+}
 /* #endregion header */
 
 /* #region hero */
@@ -136,6 +140,7 @@ ol {
 }
 .first {
   background: #2e2f42;
+  padding: 188px 0;
 }
 .first-title {
   font-weight: 700;
@@ -175,12 +180,21 @@ ol {
 .description-container {
   display: flex;
   align-items: center;
-  padding: 156px 0;
+  padding: 120px 0;
 }
 .services {
 }
-.services-title {
+.visually-hidden {
   color: #2e2f42;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .services-list {
   display: flex;
@@ -214,6 +228,7 @@ ol {
 }
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 .team-titel {
   font-weight: 700;
@@ -256,6 +271,10 @@ ol {
   color: #2e2f42;
   margin-top: 32px;
   margin-bottom: 8px;
+  text-align: center;
+}
+.container-team-member {
+  padding: 32px 0;
 }
 .team-text {
   font-weight: 400;
@@ -263,6 +282,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 .team-item img {
   width: 100%;
@@ -272,11 +292,9 @@ ol {
 /* #endregion team */
 
 /* #region portfolio */
-.portfolio-container {
-  align-items: center;
-  padding: 120px 0;
-}
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .portfolio-title {
   font-weight: 700;
